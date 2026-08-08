@@ -55,3 +55,6 @@ CI/CD configuration, infrastructure, and documentation.
 ## Architecture Decision Records
 
 <!-- TODO: Add architecture decision records -->
+
+## Development
+This is project is being developed with a feature branch workflow.
