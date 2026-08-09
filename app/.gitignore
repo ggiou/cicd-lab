@@ -6,8 +6,9 @@ build/
 # Gradle Wrapper
 !gradle/wrapper/gradle-wrapper.jar
 
-# Java
+# Spring / Java
 *.class
+*.log
 
 # IntelliJ IDEA
 .idea/
@@ -32,8 +33,5 @@ bin/
 # macOS
 .DS_Store
 
-# Logs
-*.log
-
-# Generated archive
+# Generated files
 *.zip
