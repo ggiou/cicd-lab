@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('app') {
+                    sh './gradlew clean assemble'
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                dir('app') {
+                    sh './gradlew test'
+                }
+            }
+        }
+    }
+}
